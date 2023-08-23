@@ -421,6 +421,7 @@ tr {
         }
         .navbar {
             height: 150px;
+            background-color: blue;
         }
         li, a {
             font-size: 35px;
@@ -435,7 +436,6 @@ tr {
         .smallProfile {
             width: 80px;
             height: 80px;
-           
         }
         .cont-for-links-and-svgs {
             width: 100%;
