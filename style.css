@@ -23,11 +23,11 @@ body {
 }
 
 .svgs {
+    display: flex;
     margin-left: auto;
 }
 .svg-img-container {
-    display: flex;
-    height: 100%;
+   
 }
 
 li,
@@ -53,7 +53,7 @@ a:hover {
 .navbarIcons {
     
     margin-right: 20px;
-    margin-bottom: 5px;
+    margin-top: 15px;
 }
 .smallProfile {
     border-radius: 50%;
@@ -439,7 +439,7 @@ tr {
         .smallProfile {
             width: 80px;
             height: 80px;
-            margin-top: -20px;
+            margin-top: -15px;
         }
         .cont-for-links-and-svgs {
             width: 100%;
@@ -447,6 +447,7 @@ tr {
             display: flex;
         }
         .svgs {
+            margin-top: -10px;
             margin-right: 20px;
         }
         
