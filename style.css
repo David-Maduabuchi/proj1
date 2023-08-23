@@ -421,10 +421,9 @@ tr {
         }
         .navbar {
             height: 150px;
-            background-color: blue;
         }
         li, a {
-            font-size: 35px;
+            font-size: 30px;
         }
         .navbarIcons {
             width: 20px;
@@ -453,7 +452,7 @@ tr {
         }
         .filter, .export {
             font-size: 25px;
-            height: 80px;
+            height: 50px;
             border-radius: 20px;
             width: 150px;
         }
