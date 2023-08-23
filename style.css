@@ -25,6 +25,10 @@ body {
 .svgs {
     margin-left: auto;
 }
+.svg-img-container {
+    display: flex;
+    height: 100%;
+}
 
 li,
 a {
@@ -423,7 +427,7 @@ tr {
             height: 150px;
         }
         li, a {
-            font-size: 30px;
+            font-size: 25px;
         }
         .navbarIcons {
             width: 20px;
@@ -435,6 +439,7 @@ tr {
         .smallProfile {
             width: 80px;
             height: 80px;
+            margin-top: -20px;
         }
         .cont-for-links-and-svgs {
             width: 100%;
@@ -444,6 +449,7 @@ tr {
         .svgs {
             margin-right: 20px;
         }
+        
         .overview-header-container {
             height: 130px;
         }
