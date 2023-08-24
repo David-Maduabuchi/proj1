@@ -682,7 +682,9 @@ tr {
     h1 {
         font-size: 40px;
     }
-
+    .first-row {
+        gap: 30px;
+    }
     .average-h3 {
         font-size: 26px;
         margin-top: -5px;
@@ -736,6 +738,9 @@ tr {
         font-size: 20px;
         height: 60px;
         border-radius: 25px;
+    }
+    button {
+        color: rgb(0, 0, 0);
     }
 }
 
