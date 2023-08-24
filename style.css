@@ -472,6 +472,9 @@ tr {
     .base {
         margin-top: 100px;
     }
+    .average-watch-time {
+        margin-left: 20px;
+    }
 }
 
 /* For small screens or small laptops */
@@ -597,6 +600,9 @@ tr {
 
     .base {
         margin-top: 150px;
+    }
+    .average-watch-time {
+        margin-left: 20px;
     }
 }
 
