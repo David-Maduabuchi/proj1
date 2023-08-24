@@ -685,6 +685,7 @@ tr {
 
     .average-h3 {
         font-size: 26px;
+        margin-top: -5px;
     }
 
     .average-header-text {
