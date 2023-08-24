@@ -643,7 +643,6 @@ tr {
 
     .navbar {
         height: 150px;
-        background-color: blue;
     }
 
     li,
@@ -701,7 +700,7 @@ tr {
     }
 
     .third-row {
-        margin-top: 150px;
+        margin-top: 200px;
     }
 
     .filter,
@@ -722,7 +721,7 @@ tr {
     }
 
     .base {
-        margin-top: 150px;
+        margin-top: 200px;
     }
 }
 
