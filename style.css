@@ -469,7 +469,7 @@ tr {
         padding: 10px;
     }
 
-    .base{
+    .base {
         margin-top: 100px;
     }
 }
@@ -603,7 +603,7 @@ tr {
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 480px) {
     body {
-        width: 300vw;
+        width: 350vw;
         height: 100%;
         border: none;
         font-size: 2vh;
@@ -721,10 +721,20 @@ tr {
     }
 
     .base {
-        margin-top: 200px;
+        margin-top: 250px;
     }
+
     .colorful-text {
         font-size: 20px;
+    }
+
+    .third-row-special-button,
+    .second-row-special-button {
+        padding: 20px;
+        margin-left: 20px;
+        font-size: 20px;
+        height: 60px;
+        border-radius: 25px;
     }
 }
 
