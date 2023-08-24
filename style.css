@@ -723,6 +723,9 @@ tr {
     .base {
         margin-top: 200px;
     }
+    .colorful-text {
+        font-size: 20px;
+    }
 }
 
 /* For Mobile Phones Portrait or Landscape View */
