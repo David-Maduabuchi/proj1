@@ -682,9 +682,6 @@ tr {
     h1 {
         font-size: 40px;
     }
-    .first-row {
-        gap: 30px;
-    }
     .average-h3 {
         font-size: 26px;
         margin-top: -5px;
@@ -751,6 +748,9 @@ tr {
     }
     .center-coming-soon, .movie-box-logo, .admin {
         font-size: 40px;
+    }
+    .average-watch-time {
+        margin-left: 20px;
     }
 }
 
