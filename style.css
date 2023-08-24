@@ -742,6 +742,16 @@ tr {
     button {
         color: rgb(0, 0, 0);
     }
+    .base {
+        height: 200px;
+    }
+    .footer-p {
+        height: 100%;
+        font-size: 40px;
+    }
+    .center-coming-soon, .movie-box-logo, .admin {
+        font-size: 40px;
+    }
 }
 
 /* For Mobile Phones Portrait or Landscape View */
