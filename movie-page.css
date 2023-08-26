@@ -105,9 +105,10 @@
         margin-left: 10px;
     }
     .trending-button {
-        width: 150px;
+        width: 300px;
         font-size: 40px;
         padding-bottom: 60px;
+        margin: 0 10px;
     }
 
     .upcoming-premiere-button {
