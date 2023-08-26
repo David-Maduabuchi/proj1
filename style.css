@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
 html,
 body {
     padding: 0;
@@ -28,8 +29,6 @@ body {
     display: flex;
     margin-left: auto;
 }
-
-.svg-img-container {}
 
 li,
 a {
@@ -386,7 +385,7 @@ td {
 
 .view-button {
     padding: 5px 15px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .second-row-special-button,
@@ -476,6 +475,7 @@ tr {
     .base {
         margin-top: 100px;
     }
+
     .average-watch-time {
         margin-left: 20px;
     }
@@ -605,6 +605,7 @@ tr {
     .base {
         margin-top: 150px;
     }
+
     .average-watch-time {
         margin-left: 20px;
     }
@@ -692,6 +693,7 @@ tr {
     h1 {
         font-size: 40px;
     }
+
     .average-h3 {
         font-size: 26px;
         margin-top: -5px;
@@ -746,22 +748,30 @@ tr {
         height: 60px;
         border-radius: 25px;
     }
+
     button {
         color: rgb(0, 0, 0);
     }
+
     .base {
         height: 200px;
     }
+
     .footer-p {
         height: 100%;
         font-size: 40px;
     }
-    .center-coming-soon, .movie-box-logo, .admin {
+
+    .center-coming-soon,
+    .movie-box-logo,
+    .admin {
         font-size: 40px;
     }
+
     .average-watch-time {
         margin-left: 20px;
     }
+
     .view-button {
         padding: 30px;
         font-size: 25px;
