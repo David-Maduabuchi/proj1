@@ -104,7 +104,6 @@ html {
 }
 
 .center-coming-soon {
-    font-weight: 100;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -141,6 +140,7 @@ html {
 
     .spacing-coming-soon-container {
         width: 100%;
+        margin-top: 50px;
     }
 
     .filter,
@@ -154,26 +154,121 @@ html {
     .export {
         width: 200px;
     }
+
     header {
         margin: 50px 0;
     }
-    header > p {
+
+    header>p {
         font-size: 35px;
         font-weight: 100;
         color: grey;
     }
-    header > h1 {
+
+    header>h1 {
         font-size: 50px;
     }
+
     .popup-label {
         font-size: 35px;
         color: rgb(63, 63, 63);
     }
+
     .popup-input {
         font-size: 25px;
+        padding-left: 20px;
     }
+
     .popup-button {
         height: 100px;
         font-size: 30px;
+    }
+
+    .popup-content {
+        height: 50%;
+        width: 60%;
+    }
+}
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    body {
+        width: 250vw;
+        border: 1px solid;
+    }
+    .overview-svgs {
+        margin-left: 0;
+        display: flex;
+    }
+    .filter,
+    .export {
+        width: 350px;
+        padding: 10px;
+        font-size: 30px;
+        height: 80px;
+    }
+    .popup-content {
+        height: 50%;
+        width: 60%;
+    }
+    
+    header {
+        margin: 50px 0;
+    }
+
+    header>p {
+        font-size: 35px;
+        font-weight: 100;
+        color: grey;
+    }
+
+    header>h1 {
+        font-size: 50px;
+    }
+
+    .popup-label {
+        font-size: 35px;
+        color: rgb(63, 63, 63);
+    }
+
+    .popup-input {
+        font-size: 25px;
+        padding-left: 20px;
+    }
+
+    .popup-button {
+        height: 100px;
+        font-size: 30px;
+    }
+    table,
+    th,
+    td,
+    .name-column,
+    .name {
+        font-size: 30px;
+    }
+    .view-button {
+        padding: 20px;
+        font-size: 25px;
+        height: 70px;
+        margin-right: 20px;
+    }
+    .third-row {
+        margin-bottom: 200px;
+    }
+    .mp-h3 {
+        font-size: 35px;
+    }
+    .mp-p {
+        font-size: 25px;
+    }
+    .movie-premiere {
+        margin-bottom: 100px;
+    }
+    .second-row {
+        height: 100%;
+    }
+}
+@media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+    body {
+        width: 200vw;
     }
 }
