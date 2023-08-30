@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man Far From Home</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/view-button-redirect-page.css">
+</head>
+
+<body>
+    <div class="popup" id="popup" >
+        <div class="popup-content" id="popupcontent">
+            <header>
+                <h1 id="popup-h1"><strong>Update Movie</strong></h1>
+                <p class="popup-p">Update movie and view movie details</p>
+            </header>
+            <div class="movie-name-block">
+                <label class="popup-label" for="movie-name"><strong>Movie name</strong></label>
+                <input type="text" class="popup-input" name="first-update" id="movie-name" placeholder="" />
+            </div>
+            <div class="movie-owner-block">
+                <label class="popup-label" for="movie-owner"><strong>Movie Owner</strong></label>
+                <input type="text" class="popup-input" name="update" value="Sony Entertainment" id="movie-owner" placeholder="" />
+            </div>
+            <button type="submit" onclick="closePopup()" class="popup-button">Update Movie</button>
+            <button type="submit" onclick="cancel()" class="popup-button">Cancel</button>
+        </div>
+    </div>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="cont-for-links-and-svgs">
+                <div class="links">
+                    <ul>
+                        <a href="index.html"><li class="center-coming-soon">moviebox<span class="admin">Admin</span></li></a>
+                        <li><a href="index.html">Overview</a></li>
+                        <li><a href="movie-page.html">Movies</a></li>
+                        <li><a href="">Upload</a></li>
+                        <li><a href="">Reporting</a></li>
+                        <li><a href="">Users</a></li>
+                    </ul>
+                </div>
+                <div class="svgs">
+                    <a href=""><svg class="navbarIcons" width="18" height="18" stroke-width="1.5" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg" id="IconChangeColor">
+                            <path
+                                d="M18.1336 11C18.7155 16.3755 21 18 21 18H3C3 18 6 15.8667 6 8.4C6 6.70261 6.63214 5.07475 7.75736 3.87452C8.88258 2.67428 10.4087 2 12 2C12.3373 2 12.6717 2.0303 13 2.08949"
+                                stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"
+                                id="mainIconPathAttribute" stroke-width="2" fill="#000000"></path>
+                            <path
+                                d="M19 8C20.6569 8 22 6.65685 22 5C22 3.34315 20.6569 2 19 2C17.3431 2 16 3.34315 16 5C16 6.65685 17.3431 8 19 8Z"
+                                stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"
+                                id="mainIconPathAttribute" fill="#000000"></path>
+                            <path
+                                d="M13.73 21C13.5542 21.3031 13.3019 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6982 21.5547 10.4458 21.3031 10.27 21"
+                                stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"
+                                id="mainIconPathAttribute" fill="#000000"></path>
+                        </svg></a>
+                    <a href=""><svg class="navbarIcons" width="18" height="18" viewBox="0 0 48 48" id="Layer_2"
+                            data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff"
+                            stroke-width="3.5519999999999996">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path class="cls-1"
+                                    d="M39.23,26a16.52,16.52,0,0,0,.14-2,16.52,16.52,0,0,0-.14-2l4.33-3.39a1,1,0,0,0,.25-1.31l-4.1-7.11a1,1,0,0,0-1.25-.44l-5.11,2.06a15.68,15.68,0,0,0-3.46-2l-.77-5.43a1,1,0,0,0-1-.86H19.9a1,1,0,0,0-1,.86l-.77,5.43a15.36,15.36,0,0,0-3.46,2L9.54,9.75a1,1,0,0,0-1.25.44L4.19,17.3a1,1,0,0,0,.25,1.31L8.76,22a16.66,16.66,0,0,0-.14,2,16.52,16.52,0,0,0,.14,2L4.44,29.39a1,1,0,0,0-.25,1.31l4.1,7.11a1,1,0,0,0,1.25.44l5.11-2.06a15.68,15.68,0,0,0,3.46,2l.77,5.43a1,1,0,0,0,1,.86h8.2a1,1,0,0,0,1-.86l.77-5.43a15.36,15.36,0,0,0,3.46-2l5.11,2.06a1,1,0,0,0,1.25-.44l4.1-7.11a1,1,0,0,0-.25-1.31ZM24,31.18A7.18,7.18,0,1,1,31.17,24,7.17,7.17,0,0,1,24,31.18Z">
+                                </path>
+                            </g>
+                        </svg></a>
+                    <a href=""><img width="40" height="35" alt="" src="images/sigma.jpg" class="smallProfile" /></a>
+                </div>
+            </div>
+        </nav>
+        <div class="overview-header-container">
+            <div class="overview-header-subcontainer">
+                <div class="header">
+                    <h1 class="updated-h1-tag" id="updated-name">Spider-Man Far From Home</h1>
+                </div>
+                <div class="overview-svgs">
+                    <button onclick="updateMovieName()" class="filter">
+                        <img src="/images/notepad-70.png" class="filter-export-svg" width="20" height="20" />
+                        <span>Update Movie name</span>
+                    </button>
+                    <button class="export">
+                        <svg class="filter-export-svg" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor" class="bi bi-cloud-download" viewBox="0 0 16 16">
+                            <path
+                                d="M4.406 1.342A5.53 5.53 0 0 1 8 0c2.69 0 4.923 2 5.166 4.579C14.758 4.804 16 6.137 16 7.773 16 9.569 14.502 11 12.687 11H10a.5.5 0 0 1 0-1h2.688C13.979 10 15 8.988 15 7.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 2.825 10.328 1 8 1a4.53 4.53 0 0 0-2.941 1.1c-.757.652-1.153 1.438-1.153 2.055v.448l-.445.049C2.064 4.805 1 5.952 1 7.318 1 8.785 2.23 10 3.781 10H6a.5.5 0 0 1 0 1H3.781C1.708 11 0 9.366 0 7.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z" />
+                            <path
+                                d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z" />
+                        </svg><span>Export</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="body-of-the-project">
+            <div class="first-row">
+                <div class="today-user-login">
+                    <img src="/images/spider-man.jpg" alt="avengers" class="avengers-photo" />
+                </div>
+                <div class="average-watch-time">
+                    <div class="average-header-container">
+                        <div class="average-watch-time-header">
+                            <h3 class="average-h3">Average watch time</h3>
+                            <p class="average-header-text">
+                                This tracks the average watch by users every month
+                            </p>
+                        </div>
+                        <div class="average-three-dots">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="three-dots" viewBox="0 0 16 16" id="IconChangeColor">
+                                <path
+                                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
+                                    id="mainIconPathAttribute"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="coming-soon">
+                        <div class="center-coming-soon">Coming Soon...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="second-row">
+                <div class="movie-premiere">
+                    <div class="mp-header">
+                        <h3 class="mp-h3">Movie Properties</h3>
+                        <p class="mp-p">A list of details for this movie</p>
+                    </div>
+                    <div class="mp-search-container">
+                        <div class="vertical-lines">
+                            <div class="vl"></div>
+                            <div class="vl"></div>
+                            <div class="vl"></div>
+                            <div class="vl"></div>
+                            <div class="vl"></div>
+                            <div class="vl"></div>
+                            <div class="vl faintvl"></div>
+                            <div class="vl faintvl"></div>
+                            <div class="vl faintvl"></div>
+                            <div class="vl faintvl"></div>
+                            <div class="trending-icon">
+                                <svg class="trending-svg" width="20px" height="20px" viewBox="0 0 24.00 24.00"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#f109bf">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path d="M21 7L13 15L9 11L3 17M21 7H15M21 7V13" stroke="#cb46fb"
+                                            stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <span class="trending-text">Trending</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mp-table-rows">
+
+                    <table>
+                        <tr>
+                            <th class="name">Category</th>
+                            <th><strong>Streams</strong></th>
+                            <th><strong>Watchlist</strong></th>
+                            <th><strong>Owner</strong></th>
+                            <th><strong>Release Date</strong></th>
+                        </tr>
+                        <tr class="clear-base-border">
+                            <td class="round-borders">
+                                <div class="decorative-design-container">
+                                    <span class="colorful-text">ACTION</span><span
+                                        class="colorful-text">THRILLER</span>
+                                </div>
+                            </td>
+                            <td>13,043,145</td>
+                            <td>789,234</td>
+                            <td class="updated-movie-name">Sony Entertainment</td>
+                            <td>21st May, 2022</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="second-row">
+                <div class="movie-premiere">
+                    <div class="mp-header">
+                        <h3 class="mp-h3">Interest Trackinng Insights</h3>
+                        <p class="mp-p">Keep track of the insights on this movie</p>
+                    </div>
+                </div>
+                <div class="mp-table-rows">
+                    <table>
+                        <tr>
+                            <th class="name">People Reached</th>
+                            <th><strong>Content Interactions</strong></th>
+                            <th><strong>Impression</strong></th>
+                            <th><strong>Shares</strong></th>
+                            <th><strong>Likes</strong></th>
+                        </tr>
+                        <tr class="clear-base-border">
+                            <td class="round-borders">39,823,154</td>
+                            <td>76,923,304</td>
+                            <td>101,783,945</td>
+                            <td>14,895</td>
+                            <td>34,056,147</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="second-row coming-soon-main-container">
+                <div class="movie-premiere">
+                    <div class="mp-header">
+                        <h3 class="mp-h3">Audience</h3>
+                        <p class="mp-p">Specific gender, age range and top locations</p>
+                    </div>
+                </div>
+                <div class="first-row spacing-coming-soon-container">
+                    <div class="coming-soon second-coming-soon">
+                        <div class="center-coming-soon">Coming Soon...</div>
+                    </div>
+                    <div class="coming-soon second-coming-soon">
+                        <div class="center-coming-soon">Coming Soon...</div>
+                    </div>
+                    <div class="coming-soon second-coming-soon">
+                        <div class="center-coming-soon">Coming Soon...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="third-row">
+                <div class="movie-premiere">
+                    <div class="mp-header">
+                        <h3 class="mp-h3">Similar Movies</h3>
+                        <p class="mp-p">Keep track of the trending movies on moviebox</p>
+                    </div>
+                </div>
+                <div class="mp-table-rows">
+                    <table>
+                        <tr>
+                            <th style="width: 30%;" class="name">
+                                <div class="name-checkbox-container">
+                                    <input type="checkbox" class="mp-checkbox"> <span
+                                        id="checkbox-name"><strong>Name</strong></span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi arrow-down" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+                                    </svg>
+                                </div>
+                            </th>
+                            <th><strong>Category</strong></th>
+                            <th><strong>Watchlist</strong></th>
+                            <th><strong>Streams</strong></th>
+                            <th><strong>Release Date</strong></th>
+                            <th class="view"></th>
+                        </tr>
+                        <!-- Avengers Black Widow -->
+                        <tr>
+                            <td class="name-column">
+                                <div class="flex-image-pictures"><img class="table-img" src="/images/black-widow.jpg" alt="" />
+                                    <strong>Avengers Black Widow</strong>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="decorative-design-container">
+                                    <span class="colorful-text">ACTION</span><span
+                                        class="colorful-text">BLOCKBUSTER</span>
+                                </div>
+                            </td>
+                            <td>590,972,542</td>
+                            <td>21,452</td>
+                            <td>21th May, 2022</td>
+                            <td><a href="view-button-redirect-page.html"><button type="submit" class="view-button">View</button></a></td>
+                        </tr>
+                        <!-- Guideline for avengers black widow -->
+                        <!-- Ant-man -->
+                        <tr>
+                            <td class="name-column">
+                                <div class="flex-image-pictures"><img class="table-img" src="/images/ant-man.jpg" alt="" />
+                                    <strong>Ant-man</strong>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="decorative-design-container">
+                                    <span class="colorful-text">ACTION</span><span
+                                        class="colorful-text">BLOCKBUSTER</span>
+                                </div>
+                            </td>
+                            <td>22,008,901</td>
+                            <td>345,321</td>
+                            <td>21st May, 2022</td>
+                            <td><a href="ant-man.html"><button type="submit" class="view-button">View</button></a></td>
+                        </tr>
+                        <!-- Guideline for Ant-man -->
+                        <!-- Captain Marvel -->
+                        <tr>
+                            <td class="name-column">
+                                <div class="flex-image-pictures"><img class="table-img" src="/images/captain-marvel.jpg"
+                                        alt="" /><strong>Captain Marvel</strong></div>
+                            </td>
+                            <td>
+                                <div class="decorative-design-container">
+                                    <span class="colorful-text">TRUE STORY</span><span class="colorful-text">
+                                        FANTASY</span>
+                                </div>
+                            </td>
+                            <td>80,961</td>
+                            <td>903</td>
+                            <td>21st May, 2022</td>
+                            <td><a href="captain-marvel.html"><button type="submit" class="view-button">View</button></a></td>
+                        </tr>
+                        <!-- Guideline for Captain Marvel -->
+                        <!-- Moonlight -->
+                        <tr>
+                            <td>
+                                <div class="flex-image-pictures">
+                                    <img class="table-img" src="/images/spider-man-far-from-home.jpg" alt="" /><strong class="updated-h1-tag">Spider-Man Far From Home</strong>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="decorative-design-container">
+                                    <span class="colorful-text">ACTION</span><span class="colorful-text plus2more">+2
+                                        more</span>
+                                </div>
+                            </td>
+                            <td>56,893</td>
+                            <td>13,043,145</td>
+                            <td>14th June, 2012 </td>
+                            <td><a href=""><button type="submit" class="view-button">View</button></a></td>
+                        </tr>
+                    </table>
+                    <!-- Guideline for Moonliight -->
+                </div>
+
+            </div>
+        </div>
+        <div class="base">
+            <div class="container-for-base">
+                <p class="footer-p">&#169; 2022 <span class="center-coming-soon movie-box-logo">moviebox</span> <span
+                        class="admin">Admin</span>All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="scripts/spiderman.js"></script>
+</body>
+
+</html>
