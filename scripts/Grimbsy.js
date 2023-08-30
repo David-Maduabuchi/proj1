@@ -21,7 +21,7 @@ const closePopup = () => {
     if (popupUpmovieName.value === "") {
         alert("Movie name cannot be empty");
         // this is to prevent the header updating to an empty string
-        updateHeader.forEach((i) => i.innerHTML = "Avengers Black Widow");
+        updateHeader.forEach((i) => i.innerHTML = "Grimbsy");
     } else if (popupUpmovieName.value === "Grimbsy") {
         alert("Please insert a new Movie name or press cancel");
     } else {

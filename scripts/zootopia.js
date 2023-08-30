@@ -6,7 +6,7 @@ let newMovieName = document.querySelectorAll(".updated-movie-name");
 let popupUpmovieName = document.getElementById("movie-name");
 let popupOwner = document.getElementById("movie-owner");
 popupOwner.defaultValue = "Sony Entertainment";
-popupUpmovieName.defaultValue = "Spider-Man Far From Home";
+popupUpmovieName.defaultValue = "Zootopia";
 
 window.onclick = ((event => {
     if (event.target.matches(".popup")) { cancel(); }
@@ -24,8 +24,8 @@ const closePopup = () => {
     if (popupUpmovieName.value === "") {
         alert("Movie name cannot be empty");
         // this is to prevent the header updating to an empty string
-        updateHeader.forEach((i) => i.innerHTML = "Spider-Man Far From Home");
-    } else if (popupUpmovieName.value === "Spider-Man Far From Home") {
+        updateHeader.forEach((i) => i.innerHTML = "Zootopia");
+    } else if (popupUpmovieName.value === "Zootopia") {
         alert("Please insert a new Movie name or press cancel");
     } else {
         cancel();
