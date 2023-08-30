@@ -14,6 +14,9 @@ window.onclick = ((event => {
 const updateMovieName = () => {
     popup.style.left = "0%";
 }
+const cancel = () => {
+    popup.style.left = "100%"
+}
 const closePopup = () => {
     updateHeader.forEach((i) => i.innerHTML = popupUpmovieName.value);
     newMovieName.forEach((i) => i.innerHTML = popupOwner.value);
@@ -25,10 +28,7 @@ const closePopup = () => {
     } else if (popupUpmovieName.value === "Avengers Black Widow") {
         alert("Please insert a new Movie name or press cancel");
     } else {
-        popup.style.left = "100%";
+        cancel();
     }
 
-}
-const cancel = () => {
-    popup.style.left = "100%"
 }
