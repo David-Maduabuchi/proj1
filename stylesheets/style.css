@@ -464,9 +464,11 @@ tr {
 /* For Tablet View */
 @media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
     body {
-        width: 140vw;
+        width: 100%;
     }
-
+    .navbar {
+        height: 100px;
+    }
     .view {
         text-align: left;
         padding: 10px;
@@ -484,8 +486,20 @@ tr {
 /* For small screens or small laptops */
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
     body {
-        width: 240vw;
+        width: 100%;
         height: 100%;
+    }
+
+    .first-row {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .second-row,
+    .third-row {
+        margin-left: 10px;
+        margin-right: 10px;
+        height: 800px;
     }
 
     .navbar {
@@ -494,8 +508,34 @@ tr {
 
     li,
     a {
+        margin: 0;
+        font-size: 30px;
+    }
+
+    .resizable-width {
+        font-size: 30px;
+        width: 270px;
+    }
+
+    .admin {
         font-size: 35px;
     }
+
+    /* Width of navbar Links */
+    .overview {
+        width: 140px;
+    }
+
+    .movies,
+    .upload {
+        width: 120px;
+    }
+
+    .reporting {
+        width: 150px;
+    }
+
+    /* Guideline for width of navbar Links */
 
     .navbarIcons {
         width: 40px;
@@ -511,6 +551,7 @@ tr {
 
     .cont-for-links-and-svgs {
         width: 100%;
+        height: 100%;
     }
 
     .svgs {
@@ -555,16 +596,6 @@ tr {
     .tt-h3 {
         font-size: 25px;
         margin-top: 8px;
-    }
-
-    .first-row,
-    .second-row,
-    .third-row {
-        margin-top: 50px;
-    }
-
-    .third-row {
-        margin-top: 150px;
     }
 
     .average-h3 {
@@ -614,9 +645,8 @@ tr {
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 480px) {
     body {
-        width: 350vw;
+        width: 130vw;
         height: 100%;
-        border: none;
         font-size: 2vh;
     }
 
@@ -625,6 +655,15 @@ tr {
     .third-row {
         margin-right: 40px;
         margin-top: 70px;
+        margin-left: 20px;
+    }
+
+    .second-row,
+    .third-row {
+        margin-left: 0;
+        height: 1150px;
+        margin-right: 0px;
+
     }
 
     .view-button {
@@ -648,36 +687,60 @@ tr {
     }
 
     .tt-h3 {
-        font-size: 3vh;
+        font-size: 25px;
         margin-top: 10px;
     }
 
     .navbar {
-        height: 150px;
+        height: 250px;
     }
 
-    li,
     a {
-        font-size: 25px;
+        font-size: 50px;
+    }
+
+    li {
+        height: auto;
+        margin: 0px;
+        padding: 0;
+    }
+
+    /* Width of navbar Links */
+    .overview {
+        width: 225px;
+    }
+
+    .movies,
+    .upload {
+        width: 180px;
+    }
+
+    .reporting {
+        width: 240px;
+    }
+
+    /* Guideline for width of navbar Links */
+    .resizable-width {
+        width: 320px;
     }
 
     .navbarIcons {
         width: 20px;
         height: 20px;
-        margin-bottom: 30px;
-        width: 50px;
-        height: 50px;
+        margin-top: 80px;
+        width: 60px;
+        height: 60px;
     }
 
     .smallProfile {
         width: 80px;
         height: 80px;
-        margin-top: -15px;
+        margin-top: 70px;
     }
 
     .cont-for-links-and-svgs {
         width: 100%;
-        height: 60px;
+        height: 100%;
         display: flex;
     }
 
@@ -695,24 +758,20 @@ tr {
     }
 
     .average-h3 {
-        font-size: 26px;
+        font-size: 30px;
         margin-top: -5px;
     }
 
     .average-header-text {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     td {
-        font-size: 20px;
+        font-size: 27px;
     }
 
     th {
-        font-size: 20px;
-    }
-
-    .third-row {
-        margin-top: 300px;
+        font-size: 30px;
     }
 
     .filter,
@@ -729,7 +788,7 @@ tr {
     }
 
     .name-column {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .base {
@@ -737,7 +796,7 @@ tr {
     }
 
     .colorful-text {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .third-row-special-button,
@@ -777,7 +836,38 @@ tr {
         font-size: 25px;
         font-weight: 550;
         height: 80px;
+        margin-left: 20px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .mp-search-container {
+        width: 400px;
+        margin-right: 20px;
+    }
+
+    .search-subcontainer {
+        padding: 10px;
+    }
+
+    .bi-search {
+        width: 50px;
+        height: 50px;
+    }
+
+    .search-input {
+        height: 70px;
+        width: 100%;
+        font-size: 35px;
+        padding-left: 10px;
+    }
+
+    .flex-image-pictures {
+        height: 100%;
+    }
+
+    .table-img {
+        width: 70px;
+        height: 90%;
     }
 }
 

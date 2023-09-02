@@ -96,22 +96,27 @@
 
 @media screen and (max-device-width: 480px) {
     body {
-        width: 450vw;
+        width: 140vw;
         height: 100%;
     }
+
     .svgs {
         margin-right: 200px;
     }
+
     .second-row {
         margin-left: 10px;
         padding-right: 10px;
     }
+
     .overview-svgs {
         margin-right: 100px;
     }
+
     .mp-search-container {
         margin-right: 100px;
     }
+
     .trending-button {
         width: 300px;
         font-size: 40px;
@@ -165,16 +170,18 @@
 
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
     body {
-        width: 300vw;
+        width: 130vw;
     }
+
     .mp-table-rows {
         margin-top: 50px;
     }
+
     .second-row {
-        border: 1px solid;
         margin-left: 10px;
-        width:99%;
+        margin-right: 10px;
     }
+
     .search-input {
         height: 70px;
         font-size: 30px;
@@ -186,13 +193,16 @@
         height: 30px;
         margin-top: 20px;
     }
+
     .trending-table-rows {
         margin-top: 50px;
     }
+
     .upcoming-premiere-table-rows {
         margin-top: 50px;
-        margin-right: 50px;
+
     }
+
     .name-column,
     th,
     td {
@@ -202,28 +212,58 @@
     .colorful-text {
         font-size: 20px;
     }
+
     .mp-search-container {
         margin-right: 50px;
     }
+
+    .all-movies-button
+     {  width: 250px;
+        padding-bottom: 60px;
+        font-size: 40px;
+    }
+    .trending-button {
+        font-size: 40px;
+        width: 200px;
+        padding-bottom: 60px;
+    }
+    .upcoming-premiere-button {
+        font-size: 40px;
+        width: 400px;
+        padding-bottom: 60px;
+    }
+    .view-button {
+        font-size: 25px;
+        height: 70px;
+    }
+    #all-movies-table {
+        border-right: none;
+    }
+
 }
+
 @media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
     body {
-        width: 140vw;
+        width: 110vw;
     }
+
     .second-row {
         width: 90%;
         margin-left: 60px;
     }
 }
+
 @media screen and (min-width: 1024px) {
     body {
         width: 100vw;
     }
+
     .second-row {
         width: 97%;
         margin-left: 20px;
         padding: 0px;
     }
+
     .base {
         margin-top: 100px;
     }
