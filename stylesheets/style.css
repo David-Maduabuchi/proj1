@@ -645,7 +645,7 @@ tr {
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 480px) {
     body {
-        width: 130vw;
+        width: 137vw;
         height: 100%;
         font-size: 2vh;
     }
