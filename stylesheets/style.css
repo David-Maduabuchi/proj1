@@ -649,6 +649,12 @@ tr {
         height: 100%;
         font-size: 2vh;
     }
+    .app-container {
+        width: 100%;
+    }
+    .navbar {
+        width: 137vw;
+    }
 
     .first-row,
     .second-row,
