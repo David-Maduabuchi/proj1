@@ -111,7 +111,15 @@ html {
 @media screen and (max-device-width: 480px) {
     body {
         height: 100%;
-        width: 133vw;
+        width: 137vw;
+    }
+
+    .decorative-design-container {
+        display: grid;
+    }
+
+    .colorful-text {
+        margin-bottom: 5px;
     }
 
     .body-of-the-project {
@@ -223,10 +231,12 @@ html {
     .base {
         margin: 0;
     }
-.mp-search-container {
-    margin-right: 30px;
-    margin-top: 50px;
-}
+
+    .mp-search-container {
+        margin-right: 30px;
+        margin-top: 50px;
+    }
+
     .vertical-lines {
         height: 30px;
         width: 450px;
@@ -238,11 +248,13 @@ html {
         width: 5px;
         border-left: 5px solid rgb(121, 121, 121);
     }
+
     .faintvl {
         height: 40px;
         width: 5px;
         border-left: 5px solid rgb(222, 220, 220);
     }
+
     .trending-svg {
         height: 50px;
         width: 50px;
@@ -251,12 +263,21 @@ html {
 
 @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
     body {
-        width: 25z0vw;
+        width: 155vw;
         border: 1px solid;
     }
 
+    .decorative-design-container {
+        display: grid;
+    }
+
+    .colorful-text {
+        margin-bottom: 5px;
+        font-size: 25px;
+    }
+
     .overview-svgs {
-        margin-left: 0;
+        margin-right: 0;
         display: flex;
     }
 
@@ -340,19 +361,51 @@ html {
 
 @media screen and (min-device-width: 769px) and (max-device-width: 1024px) {
     body {
-        width: 200vw;
+        width: 160vw;
+    }
+
+    .decorative-design-container {
+        display: grid;
+    }
+
+    .colorful-text {
+        margin-bottom: 5px;
+        font-size: 18px;
+        width: 130px;
+    }
+
+    table,
+    th,
+    td {
+        font-size: 18px;
+    }
+
+    .mp-table-rows {
+        margin-top: 50px;
+    }
+
+    .spacing-coming-soon-container {
+        margin-top: 50px;
+    }
+
+    .second-row {
+        height: 500px;
+        margin-top: 100px;
+    }
+
+    .third-row {
+        height: 900px;
+    }
+
+    .mp-h3 {
+        font-size: 30px;
+    }
+
+    .mp-p {
+        font-size: 25px;
     }
 }
 
-@media screen and (min-device-width: 1024px) and (max-device-width: 1300px) {
-    body {
-        width: 120vw;
-    }
-
-    .first-row,
-    .second-row,
-    .third-row {
-        margin-left: 20px;
-    }
+@media screen and (min-device-width: 1024px)  {
 
 }
