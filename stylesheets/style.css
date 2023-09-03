@@ -448,6 +448,9 @@ tr {
     color: rgb(96, 96, 96);
     font-weight: 50;
 }
+.app-container, .navbar {
+    width: 100%;
+}
 
 
 /*For Desktop View */
@@ -466,9 +469,11 @@ tr {
     body {
         width: 100%;
     }
+
     .navbar {
         height: 100px;
     }
+
     .view {
         text-align: left;
         padding: 10px;
@@ -645,15 +650,12 @@ tr {
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 480px) {
     body {
-        width: 137vw;
+        width: 138vw;
         height: 100%;
-        font-size: 2vh;
     }
-    .app-container {
-        width: 137vw;
-    }
-    .navbar {
-        width: 137vw;
+
+    .app-container, .navbar {
+        width: 100%;
     }
 
     .first-row,

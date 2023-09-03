@@ -52,6 +52,9 @@
 .app-container {
     display: block;
 }
+.app-container, .navbar {
+    width: 100%;
+}
 
 .all-movies-button {
     border: none;
@@ -96,25 +99,22 @@
 
 @media screen and (max-device-width: 480px) {
     body {
-        width: 140vw;
+        width: 130vw;
         height: 100%;
     }
-
-    .svgs {
-        margin-right: 200px;
+    .decorative-design-container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
     }
-
+    .colorful-text {
+        margin-bottom: 20px;
+    }
+    .app-container, .navbar {
+        width: 100%;
+    }
     .second-row {
         margin-left: 10px;
         padding-right: 10px;
-    }
-
-    .overview-svgs {
-        margin-right: 100px;
-    }
-
-    .mp-search-container {
-        margin-right: 100px;
     }
 
     .trending-button {
@@ -166,9 +166,15 @@
         height: 30px;
         margin-top: 20px;
     }
+    .mp-table-rows {
+        width: 100%;
+    }
+    .firelord {
+      width: 100%;
+    }
 }
 
-@media screen and (min-device-width: 481px) and (max-device-width: 768px) and (orientation: portrait) and (orientation: landscape) {
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
     body {
         width: 130vw;
     }
@@ -187,7 +193,6 @@
         font-size: 30px;
         padding-left: 10px;
     }
-https://github.com/David-Maduabuchi/proj1/commit/03d0a54c02708c818e648f2b375f8b607022d6a7
     .bi-search {
         width: 30px;
         height: 30px;
